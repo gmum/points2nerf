@@ -1,0 +1,83 @@
+{
+    "results_dir": "./results/planes",
+    "clean_results_dir": true,
+    "clean_weights_dir": true,
+    "cuda": true,
+    "gpu": 0,
+    "data_dir": "./pts2nerf_data/ds",
+    "classes": [
+        "planes"
+    ],
+    "n_points": 2048,
+    "max_epochs": 2000,
+    "poses": 1,
+    "batch_size": 1,
+    "shuffle": true,
+    "z_size": 4096,
+    "seed": 111,
+    "i_log": 1,
+    "i_sample": 1,
+    "i_save": 100,
+    "resnet": false,
+    "lr_decay": 0.999,
+    "model": {
+        "D": {
+            "dropout": 0.5,
+            "use_bias": true,
+            "relu_slope": 0.2
+        },
+        "HN": {
+            "use_bias": true,
+            "relu_slope": 0.2,
+            "arch": [
+                4096,
+                8192
+            ],
+            "chunk_size": 16384
+        },
+        "E": {
+            "use_bias": true,
+            "relu_slope": 0.2
+        },
+        "TN": {
+            "use_bias": true,
+            "D": 8,
+            "W": 256,
+            "skips": [
+                4
+            ],
+            "peturb": 1,
+            "N_importance": 0,
+            "N_samples": 256,
+            "N_rand": 1024,
+            "white_bkgd": true,
+            "use_viewdirs": false,
+            "raw_noise_std": 0,
+            "multires": 10,
+            "multires_views": 4,
+            "i_embed": 0,
+            "netchunk": 8192,
+            "chunk": 16384,
+            "relu_slope": 0.2,
+            "freeze_layers_learning": false,
+            "input_ch_embed": 63,
+            "input_ch_views_embed": 27
+        }
+    },
+    "optimizer": {
+        "D": {
+            "hyperparams": {
+                "lr": 5e-05,
+                "betas": [
+                    0.9,
+                    0.999
+                ]
+            }
+        },
+        "E_HN": {
+            "hyperparams": {
+                "lr": 5e-05
+            }
+        }
+    }
+}
