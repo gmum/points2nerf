@@ -11,6 +11,7 @@ Model based on VAE/Hypernetwork architecture, takes as input colored cloud of po
 
 ## Requirements
 - Dependencies stored in `requirements.txt`.
+- submodule ![ChamferDistancePytorch](https://github.com/ThibaultGROUEIX/ChamferDistancePytorch)
 - Python 3.9.12
 - CUDA
 
