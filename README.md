@@ -48,7 +48,7 @@ Or download provided data: ShapeNet cars, planes, chairs with 50 renders, each 2
 2. If using ShapeNet convert to `.gltf` extension (this removes duplicate faces etc.)
 3. Use `cloud_exporter.py` to sample colored point cloud from objects.
 4. Render them using `generate.py` which requires `Blender`
-5. Put them in separate folder with structure: `ds/<category_name>/sampled/<img_count>_<shapenet_name>.npz
+5. Put them in separate folder with structure: `ds/<category_name>/sampled/<img_count>_<shapenet_name>.npz`
 6. Use that `ds` folder as input for training.
 
 Note:
