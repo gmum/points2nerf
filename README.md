@@ -1,7 +1,10 @@
 # Points2NeRF: Generating Neural Radiance Fields from 3D point cloud
 
-![Car](examples/car.gif) ![Plane](examples/plane.gif) ![Chair](examples/chair.gif)
 
+![Car](examples/car.gif) ![Plane](examples/plane.gif) ![Chair](examples/chair.gif)
+![Interpolation](examples/interpolation.gif)
+
+Model based on Hypernetwork architecture, takes as input colored cloud of points, images, and generates NeRF (xyz$\alpha$$\beta$ -> RGB) functions that can be used in volumetric rendering reconstruction.
 
 ### Abstract
 Contemporary registration devices for 3D visual information, such as LIDARs and various depth cameras, capture data as 3D point clouds. In turn, such clouds are challenging to be processed due to their size and complexity. Existing methods address this problem by fitting a mesh to the point cloud and rendering it instead. This approach, however, leads to the reduced fidelity of the resulting visualization and misses color information of the objects crucial in computer graphics applications. In this work, we propose to mitigate this challenge by representing 3D objects as Neural Radiance Fields (NeRFs). We leverage a hypernetwork paradigm and train the model to take a 3D point cloud with the associated color values and return a NeRF network's weights that reconstruct 3D objects from input 2D images. Our method provides efficient 3D object representation and offers several advantages over the existing approaches, including the ability to condition NeRFs and improved generalization beyond objects seen in training. The latter we also confirmed in the results of our empirical evaluation.
@@ -34,6 +37,7 @@ For sampling images, interpolations:
 `python render_samples.py config_cars.json -o_anim_count=10 -g_anim_count=25 -i_anim_count=5 -train_ds=0 -epoch=1000`
 
 Above line, will render: 10 objects reconstruction image sets, 25 generated objects, 5 interpolations.
+For each object, and some interpolation steps, script will have 3D object produced using marching cubes algorithm.
    
 ### Data Preparation
   
