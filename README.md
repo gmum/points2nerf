@@ -53,3 +53,4 @@ Or download provided data: ShapeNet cars, planes, chairs with 50 renders, each 2
 
 Note:
 - <shapenet_name> is required if you want evaluation to find original `.obj` files in order to sample and compare points position with model reconstruction.
+- training requires considerable ammount of GPU memory, it can be reduced by changing parameters in the `config` files (`N_samples`, `N_rand`, `chunk` sizes for target NeRF networks and the Hypernetwork)
