@@ -1,3 +1,4 @@
+# Modified: https://github.com/panmari/stanford-shapenet-renderer
 # A simple script that uses blender to render views of a single object by rotation the camera around it.
 # Also produces depth map at the same time.
 #
