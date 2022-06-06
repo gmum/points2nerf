@@ -4,7 +4,7 @@
     "clean_weights_dir": true,
     "cuda": true,
     "gpu": 0,
-    "data_dir": "./pts2nerf_data/ds",
+    "data_dir": "./pts2nerf_data",
     "classes": [
         "planes"
     ],
