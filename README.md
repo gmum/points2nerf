@@ -6,7 +6,7 @@
 
 | arXiv |
 | :---- |
-| ![Points2NeRF: Generating Neural Radiance Fields from 3D point cloud](https://arxiv.org/pdf/2206.01290.pdf)|
+| [Points2NeRF: Generating Neural Radiance Fields from 3D point cloud](https://arxiv.org/pdf/2206.01290.pdf)|
 
 
 Model based on VAE/Hypernetwork architecture, takes as input colored cloud of points, encodes them into latent space and generates NeRF (xyz$\alpha\beta$ -> RGB) functions that can be used in volumetric rendering reconstruction.
@@ -47,7 +47,7 @@ For each object, and some interpolation steps, script will have 3D object produc
 
 ### Prepared Dataset
 
-![Download Dataset here.](https://ujchmura-my.sharepoint.com/:u:/g/personal/przemyslaw_spurek_uj_edu_pl/ETy5BPpf4ZFLorYEpXxhRRcBY1ASvCqDCgEX_h75Um6MlA?e=MTJdaj)
+[Download Dataset here.](https://ujchmura-my.sharepoint.com/:u:/g/personal/przemyslaw_spurek_uj_edu_pl/ETy5BPpf4ZFLorYEpXxhRRcBY1ASvCqDCgEX_h75Um6MlA?e=MTJdaj)
 
 Folders should be placed in a local folder specified in config file for specified experiment.
 For metrics calculation you need to download a ShapenetCore.V2 by yourself and specify its' location in a config file.
