@@ -37,7 +37,7 @@ Results will be saved in the directory defined in config file.
 
 You can use pre-trained model:
 
-https://drive.google.com/drive/folders/1dcSxbXfSYpwjcazrVsHm3WNWcB8uPps-?usp=sharing
+[Download model here.](https://drive.google.com/drive/folders/1dcSxbXfSYpwjcazrVsHm3WNWcB8uPps-?usp=sharing)
 
 For calculating metrics:
 `python eval.py config_cars.json`
@@ -51,7 +51,7 @@ For each object, and some interpolation steps, script will have 3D object produc
 
 ### Prepared Dataset
 
-[Download Dataset here.](https://ujchmura-my.sharepoint.com/:u:/g/personal/przemyslaw_spurek_uj_edu_pl/ETy5BPpf4ZFLorYEpXxhRRcBY1ASvCqDCgEX_h75Um6MlA?e=MTJdaj)
+[Download dataset here.](https://ujchmura-my.sharepoint.com/:u:/g/personal/przemyslaw_spurek_uj_edu_pl/ETy5BPpf4ZFLorYEpXxhRRcBY1ASvCqDCgEX_h75Um6MlA?e=MTJdaj)
 
 Folders should be placed in a local folder specified in experiment's config file.
 For metrics calculation you need to download a ShapenetCore.V2 by yourself and specify its' location in a config file.
