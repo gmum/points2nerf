@@ -35,6 +35,10 @@ Results will be saved in the directory defined in config file.
 
 ### Evaluation and Sampling
 
+You can use pre-trained model:
+
+https://drive.google.com/drive/folders/1dcSxbXfSYpwjcazrVsHm3WNWcB8uPps-?usp=sharing
+
 For calculating metrics:
 `python eval.py config_cars.json`
 
